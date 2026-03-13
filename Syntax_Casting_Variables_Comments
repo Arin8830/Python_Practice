@@ -1,1 +1,57 @@
-{"metadata":{"kernelspec":{"language":"python","display_name":"Python 3","name":"python3"},"language_info":{"name":"python","version":"3.12.12","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"},"kaggle":{"accelerator":"none","dataSources":[],"dockerImageVersionId":31286,"isInternetEnabled":true,"language":"python","sourceType":"notebook","isGpuEnabled":false}},"nbformat_minor":4,"nbformat":4,"cells":[{"cell_type":"code","source":"# This Python 3 environment comes with many helpful analytics libraries installed\n# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python\n# For example, here's several helpful packages to load\n\nimport numpy as np # linear algebra\nimport pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)\n\n# Input data files are available in the read-only \"../input/\" directory\n# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory\n\nimport os\nfor dirname, _, filenames in os.walk('/kaggle/input'):\n    for filename in filenames:\n        print(os.path.join(dirname, filename))\n\n# You can write up to 20GB to the current directory (/kaggle/working/) that gets preserved as output when you create a version using \"Save & Run All\" \n# You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session","metadata":{"_uuid":"8f2839f25d086af736a60e9eeb907d3b93b6e0e5","_cell_guid":"b1076dfc-b9ad-4769-8c92-a6c4dae69d19","trusted":true,"execution":{"iopub.status.busy":"2026-03-12T16:11:08.970550Z","iopub.execute_input":"2026-03-12T16:11:08.971436Z","iopub.status.idle":"2026-03-12T16:11:08.976728Z","shell.execute_reply.started":"2026-03-12T16:11:08.971403Z","shell.execute_reply":"2026-03-12T16:11:08.975851Z"}},"outputs":[],"execution_count":4},{"cell_type":"markdown","source":"# Day 0","metadata":{}},{"cell_type":"markdown","source":"#**** Python Documentation\n\n#https://docs.python.org/","metadata":{}},{"cell_type":"markdown","source":"# Day 1","metadata":{}},{"cell_type":"code","source":"#Syntax\n\nprint(\"Hello World\")\n\nif 1>2:\n    print(\"yes\")\nelse:\n    print(-1)\n\nx = 5\ny = \"Hello, World!\"\nprint(x,y)","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2026-03-13T15:33:44.471173Z","iopub.execute_input":"2026-03-13T15:33:44.471941Z","iopub.status.idle":"2026-03-13T15:33:44.477524Z","shell.execute_reply.started":"2026-03-13T15:33:44.471898Z","shell.execute_reply":"2026-03-13T15:33:44.476591Z"}},"outputs":[{"name":"stdout","text":"Hello World\n-1\n5 Hello, World!\n","output_type":"stream"}],"execution_count":6},{"cell_type":"code","source":"print(\"Hello World!\", end=\" no\")  #print with a new line","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2026-03-13T15:35:33.040824Z","iopub.execute_input":"2026-03-13T15:35:33.041421Z","iopub.status.idle":"2026-03-13T15:35:33.047725Z","shell.execute_reply.started":"2026-03-13T15:35:33.041381Z","shell.execute_reply":"2026-03-13T15:35:33.046608Z"}},"outputs":[{"name":"stdout","text":"Hello World! no","output_type":"stream"}],"execution_count":8},{"cell_type":"code","source":"#comments\n\n#this is a code\n\n","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2026-03-13T15:38:06.555864Z","iopub.execute_input":"2026-03-13T15:38:06.556490Z","iopub.status.idle":"2026-03-13T15:38:06.561109Z","shell.execute_reply.started":"2026-03-13T15:38:06.556458Z","shell.execute_reply":"2026-03-13T15:38:06.560013Z"}},"outputs":[],"execution_count":11},{"cell_type":"code","source":"#Casting\n\nx = str(3)    # x will be '3'\ny = int(3)    # y will be 3\nz = float(3)  # z will be 3.0\n \nprint(x,y,z)","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2026-03-13T15:40:08.677341Z","iopub.execute_input":"2026-03-13T15:40:08.677691Z","iopub.status.idle":"2026-03-13T15:40:08.683576Z","shell.execute_reply.started":"2026-03-13T15:40:08.677664Z","shell.execute_reply":"2026-03-13T15:40:08.682461Z"}},"outputs":[{"name":"stdout","text":"3 3 3.0\n","output_type":"stream"}],"execution_count":13},{"cell_type":"code","source":"#Variables\n\nmyvar = \"John\"\nmy_var = \"John\"\n_my_var = \"John\"\nmyVar = \"John\"\nMYVAR = \"John\"\nmyvar2 = \"John\"\nprint(myvar2)\n\n\nmyVariableName = \"John\"  #Camel Case\nMyVariableName = \"John\" #Pascal Case\nmy_variable_name = \"John\" #Snake Case\n\n#Multiple Values in one variable\n\nx, y, z = \"Orange\", \"Banana\", \"Cherry\"\nprint(x)\nprint(y)\nprint(z)\n\n#Global Variables\nk = \"awesome\"\n\ndef myfunc():\n  print(\"Python is \" + k)\n\nmyfunc()","metadata":{"trusted":true,"execution":{"iopub.status.busy":"2026-03-13T15:50:18.115772Z","iopub.execute_input":"2026-03-13T15:50:18.116157Z","iopub.status.idle":"2026-03-13T15:50:18.124744Z","shell.execute_reply.started":"2026-03-13T15:50:18.116128Z","shell.execute_reply":"2026-03-13T15:50:18.123055Z"}},"outputs":[{"name":"stdout","text":"John\nOrange\nBanana\nCherry\nPython is awesome\n","output_type":"stream"}],"execution_count":17},{"cell_type":"code","source":"#Data Types\n\n","metadata":{"trusted":true},"outputs":[],"execution_count":null}]}
+#Syntax
+
+print("Hello World")
+
+if 1>2:
+    print("yes")
+else:
+    print(-1)
+
+x = 5
+y = "Hello, World!"
+print(x,y)
+
+print("Hello World!", end=" no")  #print with a new line
+
+#comments
+
+#this is a code
+
+#Casting
+
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+ 
+print(x,y,z)
+
+#Variables
+
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+print(myvar2)
+
+
+myVariableName = "John"  #Camel Case
+MyVariableName = "John" #Pascal Case
+my_variable_name = "John" #Snake Case
+
+#Multiple Values in one variable
+
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+#Global Variables
+
+k = "awesome"
+
+def myfunc():
+  print("Python is " + k)
+
+myfunc()
