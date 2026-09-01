@@ -45,7 +45,7 @@ power(b=3,a=2)
 
 
 #args
-# suppose you make a function of multiply but user to give the 
+# suppose you make a function of multiply but user to give the,
 # input more than 2 numbers or more in this case ags will be use.
 
 def mul(a,b):
